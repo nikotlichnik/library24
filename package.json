@@ -1,0 +1,40 @@
+{
+  "name": "library24",
+  "version": "1.0.0",
+  "description": "omega-test-project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikotlichnik/library24.git"
+  },
+  "author": "nikotlichnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikotlichnik/library24/issues"
+  },
+  "homepage": "https://github.com/nikotlichnik/library24#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}
