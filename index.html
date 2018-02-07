@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
+<div class="svg-sprite" style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav col-lg-12">
         <div class="main-nav__user-list-wrapper col-lg-12">
             <a class="main-nav__logo" href="#">
-                <img class="main-nav__logo-image" src="img/logo.svg" width="184" height="47"
-                     alt="Логотип Библиотекарь 24">
+                <svg class="main-nav__logo-image" width="184px" height="60px">
+                    <use xlink:href="#logo"></use>
+                </svg>
             </a>
             <ul class="user-list">
                 <li class="user-list__item">
@@ -24,14 +28,15 @@
                 </li>
                 <li class="user-list__item">
                     <a class="user-list__link user-list__link--blind" href="#">
-                        <img class="user-list__icon user-list__icon--glasses" src="img/glasses.svg" width="41"
-                             height="17" alt="Очки">
+                        <svg class="user-list__icon user-list__icon--glasses" width="41" height="17">
+                            <use xlink:href="#glasses"></use>
+                        </svg>
                         <span class="visually-hidden">Версия для слабовидящих</span>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="main-nav__site-list-wrapper col-lg-12">
+        <div class="main-nav__site-list-wrapper">
             <ul class="site-list">
                 <li class="site-list__item"><a class="site-list__link" href="#">О проекте</a></li>
                 <li class="site-list__item"><a class="site-list__link" href="#">Новости</a></li>

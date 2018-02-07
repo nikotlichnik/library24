@@ -7,7 +7,7 @@
 }
 
 .site-list__item {
-  margin-right: 50px;
+  margin-right: 42px;
 }
 
 .site-list__link {
@@ -18,4 +18,8 @@
   line-height: 24px;
 
   text-decoration: none;
+
+  display: block;
+
+  padding: 18px 0;
 }

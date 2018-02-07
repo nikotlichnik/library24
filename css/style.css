@@ -62,14 +62,18 @@
   background-color: #f8f8fa;
   margin: 0;
   padding: 0;
-  padding-top: 20px; }
+  padding-top: 21px; }
 
 .main-nav {
-  background-color: #f8f8fa; }
+  background-color: #f8f8fa;
+  position: relative; }
+
+.main-nav__logo {
+  line-height: 0; }
 
 .main-nav__logo-image {
   width: 184px;
-  height: 47px; }
+  height: 60px; }
 
 .main-nav__user-list-wrapper {
   display: -webkit-box;
@@ -81,18 +85,29 @@
 
 .main-nav__site-list-wrapper {
   background-color: #ffffff;
+  -webkit-box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08); }
+  width: 1120px;
+  padding-left: 79px;
+  padding-right: 20px;
+  position: relative;
+  left: -65px; }
 
 .main-nav__location {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-top: 22px; }
+
+.main-nav__icon--pin {
+  width: 11px;
+  height: 17px;
+  fill: #0094d6; }
 
 .main-nav__city {
   color: #0094d6;
@@ -100,7 +115,19 @@
   font-weight: normal;
   line-height: 24px;
   text-decoration: none;
-  border-bottom: 1px solid #0094d6; }
+  border-bottom: 1px solid #0094d6;
+  position: relative; }
+  .main-nav__city::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    width: 11px;
+    height: 17px;
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    text-decoration: none; }
 
 .user-list {
   list-style: none;
@@ -113,13 +140,27 @@
 .user-list__item {
   margin-right: 25px; }
 
+.user-list__item:nth-last-child(2) {
+  margin-right: 38px; }
+
+.user-list__item:last-child {
+  margin-right: 0; }
+
 .user-list__link {
   color: #0094d6;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 0; }
+
+.user-list__link--blind {
+  padding-top: 11px; }
+
+.user-list__icon--glasses {
+  fill: #aaaaaa; }
 
 .site-list {
   list-style: none;
@@ -130,7 +171,7 @@
   padding: 0; }
 
 .site-list__item {
-  margin-right: 50px; }
+  margin-right: 42px; }
 
 .site-list__link {
   color: #8d8d8d;
@@ -138,7 +179,9 @@
   font-size: 22px;
   font-weight: bold;
   line-height: 24px;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block;
+  padding: 18px 0; }
 
 .banner {
   display: -webkit-box;

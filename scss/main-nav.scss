@@ -1,10 +1,16 @@
 .main-nav {
   background-color: $site-background;
+
+  position: relative;
+}
+
+.main-nav__logo {
+  line-height: 0;
 }
 
 .main-nav__logo-image {
   width: 184px;
-  height: 47px;
+  height: 60px;
 }
 
 .main-nav__user-list-wrapper {
@@ -14,16 +20,29 @@
 
 .main-nav__site-list-wrapper {
   background-color: $white;
+  box-shadow: -6px -6px 15px 0 $shadow;
 
   display: flex;
   justify-content: space-between;
+  width: 1120px;
+  padding-left: 79px;
+  padding-right: 20px;
 
-  box-shadow: -6px -6px 15px 0 $shadow;
+  position: relative;
+  left: -65px;
 }
 
 .main-nav__location {
   margin: 0;
   padding: 0;
+  padding-top: 22px;
+}
+
+.main-nav__icon--pin {
+  width: 11px;
+  height: 17px;
+
+  fill: $menu-link-blue;
 }
 
 .main-nav__city {
@@ -35,4 +54,23 @@
   text-decoration: none;
 
   border-bottom: 1px solid $menu-link-blue;
+
+  position: relative;
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    display: inline-block;
+    width: 11px;
+    height: 17px;
+
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+
+    text-decoration: none;
+  }
 }

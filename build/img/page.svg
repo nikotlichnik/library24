@@ -1,18 +1,1 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="227px" height="362px">
-<defs>
-<linearGradient id="PSgrad_0" x1="99.863%" x2="0%" y1="5.234%" y2="0%">
-  <stop offset="0%" stop-color="rgb(122,72,57)" stop-opacity="1" />
-  <stop offset="41%" stop-color="rgb(253,160,133)" stop-opacity="1" />
-  <stop offset="68%" stop-color="rgb(250,186,117)" stop-opacity="1" />
-  <stop offset="100%" stop-color="rgb(246,211,101)" stop-opacity="1" />
-</linearGradient>
-
-</defs>
-<path fill-rule="evenodd"  fill="rgb(170, 170, 170)"
- d="M-0.000,10.678 C201.000,-12.972 226.903,12.703 226.903,12.703 L226.903,352.541 C226.903,352.541 186.863,368.887 -0.000,357.541 C1.012,340.327 -0.000,40.959 -0.000,10.678 Z"/>
-<path fill="url(#PSgrad_0)"
- d="M-0.000,10.678 C201.000,-12.972 226.903,12.703 226.903,12.703 L226.903,352.541 C226.903,352.541 186.863,368.887 -0.000,357.541 C1.012,340.327 -0.000,40.959 -0.000,10.678 Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="227" height="362"><defs><linearGradient id="a" x1="99.863%" x2="0%" y1="5.234%" y2="0%"><stop offset="0%" stop-color="#7A4839"/><stop offset="41%" stop-color="#FDA085"/><stop offset="68%" stop-color="#FABA75"/><stop offset="100%" stop-color="#F6D365"/></linearGradient></defs><path fill-rule="evenodd" fill="#AAA" d="M0 10.678c201-23.65 226.903 2.025 226.903 2.025v339.838s-40.04 16.346-226.903 5C1.012 340.327 0 40.959 0 10.678z"/><path fill="url(#a)" d="M0 10.678c201-23.65 226.903 2.025 226.903 2.025v339.838s-40.04 16.346-226.903 5C1.012 340.327 0 40.959 0 10.678z"/></svg>
