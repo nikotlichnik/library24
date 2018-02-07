@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Cormorant';
   display: swap;
-  src: url('../fonts/Cormorantgaramondbold.woff2') format('woff2');
+  src: url('../fonts/Cormorantgaramondbold.woff2') format('woff2'),
+  url('../fonts/Cormorantgaramondbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -9,7 +10,8 @@
 @font-face {
   font-family: 'Cormorant';
   display: swap;
-  src: url('../fonts/Cormorantgaramond.woff2') format('woff2');
+  src: url('../fonts/Cormorantgaramond.woff2') format('woff2'),
+  url('../fonts/Cormorantgaramond.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +19,8 @@
 @font-face {
   font-family: 'Cormorant';
   display: swap;
-  src: url('../fonts/Cormorantgaramondsemibold.woff2') format('woff2');
+  src: url('../fonts/Cormorantgaramondsemibold.woff2') format('woff2'),
+  url('../fonts/Cormorantgaramondsemibold.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -25,7 +28,8 @@
 @font-face {
   font-family: 'Roboto';
   display: swap;
-  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +37,7 @@
 @font-face {
   font-family: 'Roboto';
   display: swap;
-  src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
