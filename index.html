@@ -12,7 +12,8 @@
     <nav class="main-nav">
         <div class="main-nav__user-list-wrapper">
             <a class="main-nav__logo" href="#">
-                <img class="main-nav__logo-image" src="img/logo.svg" width="184" height="47" alt="Логотип Библиотекарь 24">
+                <img class="main-nav__logo-image" src="img/logo.svg" width="184" height="47"
+                     alt="Логотип Библиотекарь 24">
             </a>
             <ul class="user-list">
                 <li class="user-list__item">
@@ -23,7 +24,8 @@
                 </li>
                 <li class="user-list__item">
                     <a class="user-list__link user-list__link--blind" href="#">
-                        <img class="user-list__icon user-list__icon--glasses" src="img/glasses.svg" alt="Очки">
+                        <img class="user-list__icon user-list__icon--glasses" src="img/glasses.svg" width="41"
+                             height="17" alt="Очки">
                         <span class="visually-hidden">Версия для слабовидящих</span>
                     </a>
                 </li>
@@ -38,7 +40,7 @@
                 <li class="site-list__item"><a class="site-list__link" href="#">Форум</a></li>
             </ul>
             <p class="main-nav__location">
-                <a class="main-nav__city" href="#">Санкт-петербург</a>
+                <a class="main-nav__city" href="#">Санкт-Петербург</a>
             </p>
         </div>
     </nav>
@@ -54,7 +56,8 @@
             </div>
             <div class="book__page book__page--right">
                 <p class="book__article-title">Lorem ipsum</p>
-                <p class="book__article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <p class="book__article-text"><span class="book__first-word">Lorem</span> ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ostrud
                     exercitation ullamco laboris nisi aliquip ex ecommodo. Duis aute irure.</p>
             </div>
@@ -68,48 +71,51 @@
     </section>
     <section class="news">
         <h2 class="news__title">Новости</h2>
-        <div class="news__toggles">
-            <button class="news__toggle news__toggle--previous"><span class="visually-hidden">Предыдущие новости</span>
-            </button>
-            <button class="news__toggle news__toggle--next"><span class="visually-hidden">Следующие новости</span>
-            </button>
+        <div class="news__wrapper">
+            <div class="news__toggles">
+                <button class="news__toggle news__toggle--previous"><span
+                        class="visually-hidden">Предыдущие новости</span>
+                </button>
+                <button class="news__toggle news__toggle--next"><span class="visually-hidden">Следующие новости</span>
+                </button>
+            </div>
+            <ul class="news__items">
+                <li class="news__item">
+                    <p class="news__date">
+                        <span class="news__date-day">14</span>
+                        <span class="news__date-month">июля</span>
+                    </p>
+                    <img class="news__image" src="img/news1.jpg">
+                    <h3 class="news__title">Lorem ipsum</h3>
+                    <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna. aliqua.</p>
+                </li>
+                <li class="news__item">
+                    <p class="news__date">
+                        <span class="news__date-day">12</span>
+                        <span class="news__date-month">июля</span>
+                    </p>
+                    <img class="news__image" src="img/news2.jpg">
+                    <h3 class="news__title">Lorem ipsum</h3>
+                    <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna. aliqua.</p>
+                </li>
+                <li class="news__item">
+                    <p class="news__date">
+                        <span class="news__date-day">9</span>
+                        <span class="news__date-month">июля</span>
+                    </p>
+                    <img class="news__image" src="img/news3.jpg">
+                    <h3 class="news__title">Lorem ipsum</h3>
+                    <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna. aliqua.</p>
+                </li>
+            </ul>
         </div>
-        <ul class="news__items">
-            <li class="news__item">
-                <p class="news__date">
-                    <span class="news__date-day">14</span>
-                    <span class="news__date-month">июля</span>
-                </p>
-                <img class="news__image" src="img/#">
-                <h3 class="news__title">Lorem ipsum</h3>
-                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna. aliqua.</p>
-            </li>
-            <li class="news__item">
-                <p class="news__date">
-                    <span class="news__date-day">12</span>
-                    <span class="news__date-month">июля</span>
-                </p>
-                <img class="news__image" src="img/#">
-                <h3 class="news__title">Lorem ipsum</h3>
-                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna. aliqua.</p>
-            </li>
-            <li class="news__item">
-                <p class="news__date">
-                    <span class="news__date-day">9</span>
-                    <span class="news__date-month">июля</span>
-                </p>
-                <img class="news__image" src="img/#">
-                <h3 class="news__title">Lorem ipsum</h3>
-                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna. aliqua.</p>
-            </li>
-        </ul>
     </section>
     <section class="new-books">
         <h2 class="new-books__title">Новые издания</h2>
-        <ul>
+        <ul class="new-books__items">
             <li class="new-books__item">
                 <h3 class="new-books__item-name">Lorem ipsum</h3>
                 <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -205,7 +211,7 @@
     <section class="join-us">
         <h2 class="visually-hidden">Заведение личного кабинета</h2>
         <p class="join-us__message">Если вы ещё не зарегистрировались</p>
-        <a class="joun-us__button" href="#">Завести свой личный кабинет</a>
+        <a class="join-us__button" href="#">Завести свой личный кабинет</a>
     </section>
 </main>
 <footer class="page-footer">

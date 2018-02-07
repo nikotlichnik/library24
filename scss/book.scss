@@ -1,0 +1,63 @@
+.book {
+  background-image: url("../img/page.svg"), url(../img/book.svg);
+  background-size: auto auto, 560px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 34px 50%, 0 50%;
+
+  display: flex;
+}
+
+.book__page {
+  padding-top: 100px;
+}
+
+.book__page--left {
+  @include roboto-font;
+  color: $book-white;
+
+  width: 236px;
+  padding-left: 42px;
+}
+
+.book__promo-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.book__promo-description {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.book__page--right {
+  @include cormorant-font;
+
+  width: 253px;
+  padding-left: 25px;
+}
+
+.book__article-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.book__article-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+
+  column-count: 2;
+
+  &::first-letter {
+    font-size: 24px;
+  }
+}
+
+.book__first-word {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}

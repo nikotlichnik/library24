@@ -1,0 +1,13 @@
+@mixin container-desktop {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin cormorant-font {
+  font-family: "Cormorant", "Times New Roman", serif;
+}
+
+@mixin roboto-font {
+  font-family: "Roboto", "Arial", sans-serif;
+}

@@ -1,0 +1,37 @@
+.news {
+  @include container-desktop;
+}
+
+.news__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__toggle {
+  display: block;
+  width: 66px;
+  height: 63px;
+
+  background-color: $white;
+  box-shadow: -6px -6px 15px 0 $shadow;
+  border: none;
+}
+
+.news__items {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 905px;
+  margin: 0;
+  padding: 0;
+}
+
+.news__item {
+  width: 263px;
+
+  background-color: $white;
+  box-shadow: -6px -6px 15px 0 $shadow;
+}

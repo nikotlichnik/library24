@@ -1,0 +1,22 @@
+.comment {
+  display: flex;
+
+  background: linear-gradient(to right,
+          $white 0%,
+          $white 375px,
+          rgba(161, 196, 253, 1) 375px,
+          rgba(194, 233, 251, 1) 100%);
+}
+
+.comment__author-wrapper {
+  display: flex;
+}
+
+.comment__author-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__text {
+  width: 320px;
+}

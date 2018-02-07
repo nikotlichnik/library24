@@ -1,0 +1,8 @@
+.page-footer {
+  @include container-desktop;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid $footer-border-grey;
+}

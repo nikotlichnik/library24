@@ -1,0 +1,35 @@
+.join-us {
+  @include container-desktop;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-us__message {
+  @include cormorant-font;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.join-us__button {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 1px solid $join-us-border-blue;
+  border-radius: 5px;
+
+  background: linear-gradient(to top,
+          rgba(161, 196, 253, 1) 0%,
+          rgba(194, 233, 251, 1) 100%);
+
+  display: inline-block;
+
+  padding: 30px 40px;
+}

@@ -1,0 +1,40 @@
+.main-nav {
+  background-color: $site-background;
+
+  @include container-desktop;
+}
+
+.main-nav__logo-image {
+  width: 184px;
+  height: 47px;
+}
+
+.main-nav__user-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__site-list-wrapper {
+  background-color: $white;
+
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: -6px -6px 15px 0 $shadow;
+}
+
+.main-nav__location {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__city {
+  color: $menu-link-blue;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid $menu-link-blue;
+}
