@@ -1,7 +1,6 @@
 .banner {
   display: flex;
 
-  @include container-desktop;
   min-height: 490px;
 
   background: linear-gradient(to right,

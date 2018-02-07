@@ -1,5 +1,4 @@
 .comments{
-  @include container-desktop;
 }
 
 .comments__items {
@@ -11,8 +10,4 @@
 
   margin: 0;
   padding: 0;
-}
-
-.comments__item {
-  width: 555px;
 }

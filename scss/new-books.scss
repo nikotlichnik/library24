@@ -1,5 +1,4 @@
 .new-books {
-  @include container-desktop;
 }
 
 .new-books__items {
@@ -11,14 +10,6 @@
 
   margin: 0;
   padding: 0;
-}
-
-.new-books__item {
-  width: 262px;
-}
-
-.new-books__item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .new-books__toggle {
