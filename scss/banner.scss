@@ -5,9 +5,20 @@
 
   background: linear-gradient(to right,
           transparent 0%,
-          transparent 250px,
-          rgba(161, 196, 253, 1) 250px,
+          transparent 345px,
+          rgba(161, 196, 253, 1) 345px,
           rgba(194, 233, 251, 1) 100%);
+
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 95px;
+}
+
+.banner__content{
+  padding-top: 114px;
+  padding-left: 38px;
+
+  width: 500px;
 }
 
 .banner__name {
@@ -16,6 +27,10 @@
   font-size: 48px;
   line-height: 36px;
   font-weight: bold;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
 
   text-transform: uppercase;
 }
@@ -26,6 +41,11 @@
   font-size: 22px;
   line-height: 34px;
   font-weight: bold;
+
+  width: 370px;
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
 }
 
 .banner__button {
@@ -43,5 +63,8 @@
 
   display: inline-block;
 
-  padding: 20px 50px;
+  padding-top: 21px;
+  padding-right: 58px;
+  padding-bottom: 18px;
+  padding-left: 49px;
 }
