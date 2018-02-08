@@ -343,7 +343,8 @@ img {
 .news {
   width: 1140px;
   padding: 0 15px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 83px; }
 
 .news__title {
   font-family: "Cormorant", "Times New Roman", serif;
@@ -471,6 +472,9 @@ img {
   padding: 0;
   padding: 0 20px; }
 
+.new-books {
+  position: relative; }
+
 .new-books__title {
   font-family: "Cormorant", "Times New Roman", serif;
   font-size: 20px;
@@ -478,7 +482,20 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0; }
+  margin-bottom: 27px;
+  padding: 0;
+  position: relative; }
+  .new-books__title::after {
+    content: "К";
+    font-family: "Cormorant", "Times New Roman", serif;
+    color: #d9eafb;
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    top: -84px;
+    left: 993px; }
 
 .new-books__items {
   list-style: none;
@@ -493,13 +510,27 @@ img {
   margin: 0;
   padding: 0; }
 
+.new-books__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 58px; }
+
 .new-books__item-name {
   font-family: "Cormorant", "Times New Roman", serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
   margin: 0;
-  padding: 0; }
+  margin-bottom: 9px;
+  padding: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
 
 .new-books__item-description {
   font-family: "Roboto", "Arial", sans-serif;
@@ -507,17 +538,71 @@ img {
   font-weight: normal;
   line-height: 22px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.new-books__image-wrapper {
+  background-image: url("../img/book.png");
+  background-size: 189px 240px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 189px;
+  height: 240px;
+  margin-bottom: 1px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative; }
+  .new-books__image-wrapper::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 212px;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    background-color: rgba(255, 255, 255, 0.24); }
+
+.new-books__image-wrapper--default {
+  background-image: none; }
+  .new-books__image-wrapper--default .new-books__item-image {
+    width: 189px;
+    height: 240px;
+    position: static; }
+
+.new-books__item-image {
+  width: 160px;
+  height: 212px;
+  position: relative;
+  left: 2px;
+  top: 2px; }
 
 .new-books__toggle {
   display: block;
   width: 65px;
   height: 406px;
   background-color: transparent;
-  -webkit-box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
+  background-image: url("../img/next.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: none;
-  display: none; }
+  margin-top: -203px;
+  position: absolute;
+  top: 50%;
+  right: -66px; }
+  .new-books__toggle::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 406px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+    background-image: url("../img/button-shadow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
 
 .comments__title {
   font-family: "Cormorant", "Times New Roman", serif;
@@ -634,6 +719,7 @@ img {
 
 .page-footer__information {
   font-family: "Roboto", "Arial", sans-serif;
+  color: #8c8c8c;
   font-size: 14px;
   font-weight: normal;
   line-height: 22px;
@@ -642,6 +728,7 @@ img {
 
 .page-footer__copyright {
   font-family: "Roboto", "Arial", sans-serif;
+  color: #8c8c8c;
   font-size: 14px;
   font-weight: normal;
   line-height: 22px;

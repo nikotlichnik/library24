@@ -1,4 +1,5 @@
 .new-books {
+  position: relative;
 }
 
 .new-books__title {
@@ -10,7 +11,12 @@
   text-transform: uppercase;
 
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
+
+  position: relative;
+
+  @include big-letter("К",-84px, 993px);
 }
 
 .new-books__items {
@@ -24,6 +30,13 @@
   padding: 0;
 }
 
+.new-books__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 58px;
+}
+
 .new-books__item-name {
   @include cormorant-font;
   font-size: 18px;
@@ -31,7 +44,9 @@
   line-height: 24px;
 
   margin: 0;
+  margin-bottom: 9px;
   padding: 0;
+  order: 2;
 }
 
 .new-books__item-description {
@@ -42,6 +57,55 @@
 
   margin: 0;
   padding: 0;
+  order: 3;
+}
+
+.new-books__image-wrapper {
+  background-image: url("../img/book.png");
+  background-size: 189px 240px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 189px;
+  height: 240px;
+  margin-bottom: 1px;
+  order: 1;
+
+  position: relative;
+
+  &::after{
+    content: "";
+
+    display: block;
+    width: 1px;
+    height: 212px;
+
+    position: absolute;
+    top: 2px;
+    left: 9px;
+
+    background-color: $book-line;
+  }
+}
+
+.new-books__image-wrapper--default {
+  background-image: none;
+
+  .new-books__item-image {
+    width: 189px;
+    height: 240px;
+
+    position: static;
+  }
+}
+
+.new-books__item-image {
+  width: 160px;
+  height: 212px;
+
+  position: relative;
+  left: 2px;
+  top: 2px;
 }
 
 .new-books__toggle {
@@ -50,8 +114,30 @@
   height: 406px;
 
   background-color: transparent;
-  box-shadow: -6px -6px 15px 0 $shadow;
+  background-image: url("../img/next.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: none;
 
-  display: none;
+  margin-top: -203px;
+
+  position: absolute;
+  top: 50%;
+  right: -66px;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 28px;
+    height: 406px;
+
+    position: absolute;
+    top: 0;
+    left: -28px;
+
+    background-image: url("../img/button-shadow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
