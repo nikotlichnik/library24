@@ -261,6 +261,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 490px;
   width: 600px; }
 
 .book__page--left {

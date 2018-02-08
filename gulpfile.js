@@ -30,7 +30,7 @@ gulp.task("style", function () {
 });
 
 gulp.task("sprite", function () {
-    return gulp.src(["img/*.svg"])
+    return gulp.src(["img/logo.svg", "img/glasses.svg"])
         .pipe(svgstore(({inlineSvg: true})))
         .pipe(rename("sprite.svg"))
         .pipe(gulp.dest("build/img"))
