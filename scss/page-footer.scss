@@ -4,3 +4,23 @@
 
   border-top: 1px solid $footer-border-grey;
 }
+
+.page-footer__information {
+  @include roboto-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__copyright {
+  @include roboto-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+}

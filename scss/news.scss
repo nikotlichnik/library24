@@ -1,9 +1,35 @@
 .news {
+  @include container-desktop;
+}
+
+.news__title {
+  @include cormorant-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  padding-left: 3px;
+
+  position: relative;
+
+  @include big-letter("Н",-16px, -122px);
 }
 
 .news__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.news__toggles{
+  align-self: flex-start;
+
+  margin-top: 131px;
 }
 
 .news__toggle {
@@ -12,8 +38,22 @@
   height: 63px;
 
   background-color: $white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   box-shadow: -6px -6px 15px 0 $shadow;
   border: none;
+
+  &--previous{
+    position: relative;
+    right: -3px;
+    background-image: url("../img/prev.png");
+  }
+
+  &--next{
+    position: relative;
+    right: -70px;
+    background-image: url("../img/next.png");
+  }
 }
 
 .news__items {
@@ -30,7 +70,68 @@
 
 .news__item {
   width: 263px;
+  padding-bottom: 26px;
 
   background-color: $white;
   box-shadow: -6px -6px 15px 0 $shadow;
+  border-radius: 5px;
+
+  position: relative;
 }
+
+.news__date {
+  min-height: 85px;
+  width: 63px;
+  padding-top: 12px;
+  padding-left: 8px;
+
+  position: absolute;
+  top: -20px;
+  left: 11px;
+
+  background-image: url("../img/bookmark-date.png");
+  background-repeat: no-repeat;
+}
+
+.news__date-day {
+  @include cormorant-font;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.news__date-month {
+  @include cormorant-font;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.news__image {
+  margin-bottom: 21px;
+}
+
+.news__name {
+  @include cormorant-font;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  padding: 0 20px;
+}
+
+.news__description {
+  @include roboto-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+
+}
+

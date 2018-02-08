@@ -15,8 +15,37 @@
 .comment__author-information {
   display: flex;
   flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+}
+
+.comment__author-name {
+  @include cormorant-font;
+  color: $comment-author-name;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.comment__author-about {
+  @include cormorant-font;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
 }
 
 .comment__text {
+  @include roboto-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
   width: 320px;
 }

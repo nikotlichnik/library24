@@ -9,6 +9,9 @@
   font-size: 34px;
   font-weight: normal;
   line-height: 22px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .join-us__button {
@@ -19,6 +22,7 @@
 
   text-decoration: none;
   text-transform: uppercase;
+  text-shadow: 1px 1px 0 $join-us-text-shadow;
 
   border: 1px solid $join-us-border-blue;
   border-radius: 5px;

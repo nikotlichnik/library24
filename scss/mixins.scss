@@ -1,8 +1,8 @@
-//@mixin container-desktop {
-//  width: 1140px;
-//  padding: 0 15px;
-//  margin: 0 auto;
-//}
+@mixin container-desktop {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 @mixin cormorant-font {
   font-family: "Cormorant", "Times New Roman", serif;
@@ -10,4 +10,20 @@
 
 @mixin roboto-font {
   font-family: "Roboto", "Arial", sans-serif;
+}
+
+@mixin big-letter($letter, $top, $left){
+  &::after{
+    content: $letter;
+    @include cormorant-font;
+    color: $big-letter-blue;
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 500;
+
+    position: absolute;
+    z-index: -1;
+    top: $top;
+    left: $left;
+  }
 }

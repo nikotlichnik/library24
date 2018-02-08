@@ -1,12 +1,44 @@
 .new-books {
 }
 
+.new-books__title {
+  @include cormorant-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+}
+
 .new-books__items {
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
+
+.new-books__item-name {
+  @include cormorant-font;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.new-books__item-description {
+  @include roboto-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
 
   margin: 0;
   padding: 0;
