@@ -1,10 +1,18 @@
-.page-body{
+.page-body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: $black;
 
   background-color: $site-background;
+  background-image: repeating-linear-gradient(to right,
+    $site-background-lines 0px,
+    $site-background-lines 1px,
+    $site-background 1px,
+    $site-background 195px);
+  background-repeat: no-repeat;
+  background-position: 50% 22px;
+  background-size: 976px 2370px;
 
   margin: 0;
   padding: 0;
