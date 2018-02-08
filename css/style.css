@@ -106,7 +106,7 @@ img {
   padding-left: 79px;
   padding-right: 20px;
   position: relative;
-  left: -65px; }
+  left: -79px; }
 
 .main-nav__location {
   margin: 0;
@@ -197,11 +197,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 490px;
-  background: linear-gradient(to right, transparent 0%, transparent 345px, #a1c4fd 345px, #c2e9fb 100%);
-  width: 1140px;
+  background: linear-gradient(to right, transparent 0%, transparent 316px, #a1c4fd 316px, #c2e9fb 100%);
+  width: 1168px;
   margin: 0 auto;
   margin-bottom: 53px;
-  padding: 0 95px; }
+  padding: 0 66px; }
 
 .banner__content {
   padding-top: 114px;
@@ -420,7 +420,6 @@ img {
   padding: 0; }
 
 .news__item {
-  width: 263px;
   padding-bottom: 26px;
   background-color: #ffffff;
   -webkit-box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
