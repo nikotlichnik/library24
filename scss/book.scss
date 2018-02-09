@@ -8,7 +8,7 @@
 
   display: flex;
 
-  height: 490px;
+  min-height: 490px;
   width: 600px;
 }
 
@@ -109,7 +109,6 @@
   width: 92px;
   margin-right: 29px;
 
-
   &:first-letter {
     font-size: 24px;
   }
@@ -119,4 +118,26 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
+}
+
+@media (min-width: $screen-md-min) {
+  .book {
+    background-size: 210px, 530px;
+    background-position: 48px 59px, 16px -129px;
+
+    width: 550px;
+    min-height: 450px;
+  }
+
+  .book__page--right {
+    padding-top: 67px;
+    padding-left: 17px;
+  }
+  .book__article-title {
+    margin-bottom: 32px;
+    width: 227px;
+  }
+  .book__page-wrapper {
+    padding-left: 0px;
+  }
 }

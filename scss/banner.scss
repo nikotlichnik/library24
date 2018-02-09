@@ -1,5 +1,6 @@
 .banner {
   display: flex;
+  justify-content: space-between;
 
   min-height: 490px;
 
@@ -68,4 +69,18 @@
   padding-right: 58px;
   padding-bottom: 18px;
   padding-left: 49px;
+}
+
+
+@media (min-width: $screen-md-min) {
+  .banner {
+    width: $screen-md-min;
+    min-height: 450px;
+    padding: 0;
+  }
+
+  .banner__content{
+    width: 404px;
+    padding-left: 30px;
+  }
 }

@@ -5,11 +5,6 @@
   color: $black;
 
   background-color: $site-background;
-  background-image: repeating-linear-gradient(to right,
-    $site-background-lines 0px,
-    $site-background-lines 1px,
-    $site-background 1px,
-    $site-background 195px);
   background-repeat: no-repeat;
   background-position: 50% 22px;
   background-size: 976px 2370px;
@@ -18,4 +13,18 @@
   padding: 0;
   padding-top: 21px;
   padding-bottom: 94px;
+}
+
+@media (min-width: $screen-md-min) {
+
+}
+
+@media (min-width: $screen-lg-min) {
+  .page-body {
+    background-image: repeating-linear-gradient(to right,
+      $site-background-lines 0px,
+      $site-background-lines 1px,
+      $site-background 1px,
+      $site-background 195px);
+  }
 }

@@ -74,3 +74,11 @@
     text-decoration: none;
   }
 }
+
+@media (min-width: $screen-md-min) {
+  .main-nav__site-list-wrapper {
+    width: 947px;
+    left: -15px;
+    padding: 0 15px;
+  }
+}
