@@ -56,9 +56,11 @@ img {
   .col-md-2 {
     width: 165px; }
   .col-md-3 {
-    width: 262px; }
+    width: 248px; }
   .col-md-6 {
-    width: 555px; } }
+    width: 555px; }
+  .col-md-1 {
+    width: 80px; } }
 
 @media (min-width: 1200px) {
   .col-lg-12 {
@@ -443,13 +445,12 @@ img {
   background-position: 50% 50%;
   -webkit-box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
           box-shadow: -6px -6px 15px 0 rgba(0, 0, 0, 0.08);
-  border: none; }
+  border: none;
+  position: relative; }
   .news__toggle--previous {
-    position: relative;
     right: -3px;
     background-image: url("../img/prev.png"); }
   .news__toggle--next {
-    position: relative;
     right: -70px;
     background-image: url("../img/next.png"); }
 
@@ -519,6 +520,33 @@ img {
   margin: 0;
   padding: 0;
   padding: 0 20px; }
+
+@media (min-width: 992px) {
+  .news {
+    margin-bottom: 55px; }
+  .news__title::after {
+    content: "Н";
+    font-family: "Cormorant", "Times New Roman", serif;
+    color: #d9eafb;
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    top: -39px;
+    left: -109px; }
+  .news__title::after {
+    font-size: 277px; }
+  .news__items {
+    width: 835px; }
+  .news__toggles {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 0; }
+  .news__toggle {
+    position: static; }
+    .news__toggle--next {
+      margin-bottom: 20px; } }
 
 .new-books {
   position: relative;
@@ -652,6 +680,39 @@ img {
     background-image: url("../img/button-shadow.png");
     background-repeat: no-repeat;
     background-position: 0 0; }
+
+@media (min-width: 992px) {
+  .new-books__title::after {
+    content: "К";
+    font-family: "Cormorant", "Times New Roman", serif;
+    color: #d9eafb;
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    top: -101px;
+    left: 839px; }
+  .new-books__title::after {
+    font-size: 277px; }
+  .new-books__items {
+    padding: 0px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .new-books__item {
+    padding-right: 109px; }
+  .new-books__item:nth-child(3n) {
+    padding-right: 0; }
+  .new-books__toggle {
+    height: 355px;
+    margin-top: 0;
+    top: auto;
+    bottom: 60px;
+    right: 194px; }
+    .new-books__toggle::before {
+      height: 355px;
+      background-size: auto 355px; } }
 
 .comments {
   margin-bottom: 119px; }

@@ -17,7 +17,7 @@
 
   position: relative;
 
-  @include big-letter("Н",-16px, -122px);
+  @include big-letter("Н", -16px, -122px);
 }
 
 .news__wrapper {
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.news__toggles{
+.news__toggles {
   align-self: flex-start;
 
   margin-top: 131px;
@@ -43,14 +43,14 @@
   box-shadow: -6px -6px 15px 0 $shadow;
   border: none;
 
-  &--previous{
-    position: relative;
+  position: relative;
+
+  &--previous {
     right: -3px;
     background-image: url("../img/prev.png");
   }
 
-  &--next{
-    position: relative;
+  &--next {
     right: -70px;
     background-image: url("../img/next.png");
   }
@@ -134,3 +134,32 @@
 
 }
 
+@media (min-width: $screen-md-min) {
+  .news {
+    margin-bottom: 55px;
+  }
+
+  .news__title{
+    @include big-letter("Н", -39px, -109px);
+    &::after {
+      font-size: 277px;
+    }
+  }
+
+  .news__items {
+    width: 835px;
+  }
+
+  .news__toggles {
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .news__toggle {
+    position: static;
+
+    &--next {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -11,12 +11,17 @@
   }
 
   .col-md-3 {
-    width: 262px;
+    width: 248px;
   }
 
   .col-md-6 {
     width: 555px;
   }
+
+  .col-md-1 {
+    width: 80px;
+  }
+
 }
 
 @media (min-width: $screen-lg-min) {
