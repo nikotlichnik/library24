@@ -1,5 +1,5 @@
 .book {
-  background-image: url("../img/page.svg"), url(../img/book.svg);
+  background-image: url("../img/page.svg"), url("../img/book.svg");
   background-size: auto auto, 560px;
   background-repeat: no-repeat, no-repeat;
   background-position: 48px 59px, 16px -129px;
@@ -7,6 +7,7 @@
   filter: drop-shadow(-6px -6px 11px $book-shadow);
 
   display: flex;
+  align-self: flex-start;
 
   min-height: 490px;
   width: 600px;
@@ -127,6 +128,8 @@
 
     width: 550px;
     min-height: 450px;
+
+    align-self: stretch;
   }
 
   .book__page--right {
@@ -139,5 +142,11 @@
   }
   .book__page-wrapper {
     padding-left: 0px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .book {
+    width: 600px;
   }
 }

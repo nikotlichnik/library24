@@ -24,12 +24,9 @@
 
   display: flex;
   justify-content: space-between;
-  width: 1120px;
-  padding-left: 79px;
-  padding-right: 20px;
 
-  position: relative;
-  left: -79px;
+  width: 708px;
+  padding: 0 15px;
 }
 
 .main-nav__location {
@@ -78,7 +75,21 @@
 @media (min-width: $screen-md-min) {
   .main-nav__site-list-wrapper {
     width: 947px;
+
+    position: relative;
     left: -15px;
     padding: 0 15px;
   }
 }
+
+@media (min-width: $screen-lg-min) {
+  .main-nav__site-list-wrapper {
+    width: 1120px;
+    padding-left: 79px;
+    padding-right: 20px;
+
+    left: -79px;
+  }
+}
+
+
