@@ -58,7 +58,7 @@ img {
   .col-md-3 {
     width: 248px; }
   .col-md-6 {
-    width: 555px; }
+    width: 466px; }
   .col-md-1 {
     width: 80px; } }
 
@@ -682,6 +682,8 @@ img {
     background-position: 0 0; }
 
 @media (min-width: 992px) {
+  .new-books {
+    margin-bottom: -3px; }
   .new-books__title::after {
     content: "К";
     font-family: "Cormorant", "Times New Roman", serif;
@@ -761,6 +763,21 @@ img {
           justify-content: space-between;
   margin: 0;
   padding: 0; }
+
+@media (min-width: 992px) {
+  .comments__title::after {
+    content: "О";
+    font-family: "Cormorant", "Times New Roman", serif;
+    color: #d9eafb;
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    top: -129px;
+    left: -113px; }
+  .comments__title::after {
+    font-size: 277px; } }
 
 .comment {
   display: -webkit-box;
@@ -872,6 +889,26 @@ img {
   position: relative;
   left: 1px;
   top: 1px; }
+
+@media (min-width: 992px) {
+  .comments__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: none; }
+  .comment__information {
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 27px;
+    background-color: #ffffff; }
+  .comment__text {
+    width: 370px; }
+  .comment__book {
+    width: auto;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#a1c4fd), to(#c2e9fb));
+    background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%); } }
 
 .join-us {
   display: -webkit-box;

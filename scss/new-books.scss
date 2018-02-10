@@ -145,9 +145,13 @@
 }
 
 @media (min-width: $screen-md-min) {
-  .new-books__title{
+  .new-books {
+    margin-bottom: -3px;
+  }
+
+  .new-books__title {
     @include big-letter("К", -101px, 839px);
-    &::after{
+    &::after {
       font-size: 277px;
     }
   }
@@ -162,7 +166,7 @@
     padding-right: 109px;
   }
 
-  .new-books__item:nth-child(3n){
+  .new-books__item:nth-child(3n) {
     padding-right: 0;
   }
 
@@ -174,24 +178,23 @@
     bottom: 60px;
     right: 194px;
 
-    &::before{
+    &::before {
       height: 355px;
 
       background-size: auto 355px;
     }
 
-    &--outlist{
+    &--outlist {
       display: none;
     }
 
-    &--inlist{
+    &--inlist {
       position: relative;
       bottom: auto;
       right: auto;
     }
   }
 }
-
 
 @media (min-width: $screen-lg-min) {
   .new-books__item--toggle {

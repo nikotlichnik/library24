@@ -1,4 +1,4 @@
-.comments{
+.comments {
   margin-bottom: 119px;
 }
 
@@ -28,4 +28,13 @@
 
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $screen-md-min) {
+  .comments__title {
+    @include big-letter("О", -129px, -113px);
+    &::after{
+      font-size: 277px;
+    }
+  }
 }

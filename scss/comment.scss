@@ -120,3 +120,32 @@
   left: 1px;
   top: 1px;
 }
+
+@media (min-width: $screen-md-min) {
+  .comments__item {
+    flex-direction: column;
+
+    background-image: none;
+  }
+
+  .comment__information {
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 27px;
+
+    background-color: $white;
+  }
+
+  .comment__text {
+    width: 370px;
+  }
+
+  .comment__book {
+    width: auto;
+
+    background-image: linear-gradient(to top,
+      rgba(161, 196, 253, 1) 0%,
+      rgba(194, 233, 251, 1) 100%);
+  }
+}
