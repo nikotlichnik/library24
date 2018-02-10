@@ -179,5 +179,22 @@
 
       background-size: auto 355px;
     }
+
+    &--outlist{
+      display: none;
+    }
+
+    &--inlist{
+      position: relative;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
+
+
+@media (min-width: $screen-lg-min) {
+  .new-books__item--toggle {
+    display: none;
   }
 }
