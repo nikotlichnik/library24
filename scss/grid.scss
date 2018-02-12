@@ -4,6 +4,14 @@
   margin: 0 auto;
 }
 
+.col-sm-3 {
+  width: 226px;
+}
+
+.col-sm-6 {
+  width: 354px;
+}
+
 @media (min-width: $screen-md-min) {
   .col-md-12 {
     width: 962px;

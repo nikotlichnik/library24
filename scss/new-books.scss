@@ -37,6 +37,10 @@
   flex-direction: column;
 
   margin-bottom: 58px;
+
+  &--toggle {
+    display: none;
+  }
 }
 
 .new-books__item-name {
@@ -57,6 +61,7 @@
   font-weight: normal;
   line-height: 22px;
 
+  width: 315px;
   margin: 0;
   padding: 0;
   order: 3;
@@ -123,9 +128,9 @@
 
   margin-top: -203px;
 
-  position: absolute;
-  top: 50%;
-  right: -66px;
+  position: relative;
+  //top: 50%;
+  //right: -66px;
 
   &::before {
     content: "";
@@ -141,6 +146,24 @@
     background-image: url("../img/button-shadow.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &--outlist{
+    width: 406px;
+    height: 65px;
+    margin-left: -203px;
+    margin-top: 0;
+
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: 0;
+
+    &::before {
+      transform: rotate(90deg);
+      top: -218px;
+      left: 189px;
+    }
   }
 }
 
@@ -168,6 +191,14 @@
 
   .new-books__item:nth-child(3n) {
     padding-right: 0;
+  }
+
+  .new-books__item-description {
+    width: auto;
+  }
+
+  .new-books__item--toggle {
+    display: block;
   }
 
   .new-books__toggle {

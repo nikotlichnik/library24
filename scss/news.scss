@@ -1,5 +1,5 @@
 .news {
-  margin-bottom: 83px;
+  margin-bottom: 53px;
 }
 
 .news__title {
@@ -22,14 +22,17 @@
 
 .news__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
 .news__toggles {
-  align-self: flex-start;
+  align-self: center;
 
-  margin-top: 131px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 322px;
 }
 
 .news__toggle {
@@ -43,15 +46,15 @@
   box-shadow: -6px -6px 15px 0 $shadow;
   border: none;
 
-  position: relative;
-
   &--previous {
-    right: -3px;
-    background-image: url("../img/prev.png");
+    order: 1;
+
+    background-image: url("../img/prev.png")
   }
 
   &--next {
-    right: -70px;
+    order: 2;
+
     background-image: url("../img/next.png");
   }
 }
@@ -63,9 +66,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 905px;
+  width: 738px;
   margin: 0;
-  padding: 0;
+  margin-bottom: 26px;
+  padding: 0 15px;
 }
 
 .news__item {
@@ -139,19 +143,27 @@
     margin-bottom: 55px;
   }
 
-  .news__title{
+  .news__title {
     @include big-letter("Н", -39px, -109px);
     &::after {
       font-size: 277px;
     }
   }
 
+  .news__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .news__items {
     width: 835px;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .news__toggles {
-    align-self: center;
+    display: block;
+    width: 80px;
     margin-top: 0;
   }
 
@@ -160,6 +172,34 @@
 
     &--next {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .news {
+    margin-bottom: 83px;
+  }
+  .news__items {
+    width: 905px;
+  }
+  .news__toggles {
+    align-self: flex-start;
+
+    width: 165px;
+    margin-top: 131px;
+  }
+
+  .news__toggle {
+
+    position: relative;
+
+    &--previous {
+      right: -3px;
+    }
+
+    &--next {
+      right: -70px;
     }
   }
 }
