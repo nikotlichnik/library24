@@ -12,8 +12,8 @@
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-@mixin big-letter($letter, $top, $left){
-  &::after{
+@mixin big-letter($letter, $top, $left) {
+  &::after {
     content: $letter;
     @include cormorant-font;
     color: $big-letter-blue;

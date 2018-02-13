@@ -17,7 +17,7 @@
   position: relative;
 
   @include big-letter("О", -129px, -27px);
-  &::after{
+  &::after {
     font-size: 277px;
   }
 }
@@ -33,7 +33,7 @@
   padding: 0;
 }
 
-.comments__item{
+.comments__item {
   margin-bottom: 30px;
 }
 
@@ -44,7 +44,7 @@
 @media (min-width: $screen-md-min) {
   .comments__title {
     @include big-letter("О", -129px, -113px);
-    &::after{
+    &::after {
       font-size: 277px;
     }
 
@@ -55,7 +55,7 @@
     justify-content: space-between;
   }
 
-  .comments__item{
+  .comments__item {
     margin-bottom: 0;
   }
 }
