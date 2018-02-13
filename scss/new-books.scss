@@ -18,7 +18,10 @@
 
   position: relative;
 
-  @include big-letter("К", -84px, 993px);
+  @include big-letter("К", -101px, 539px);
+  &::after {
+    font-size: 277px;
+  }
 }
 
 .new-books__items {
@@ -126,11 +129,7 @@
   background-position: 50% 50%;
   border: none;
 
-  margin-top: -203px;
-
   position: relative;
-  //top: 50%;
-  //right: -66px;
 
   &::before {
     content: "";
@@ -148,7 +147,7 @@
     background-position: 0 0;
   }
 
-  &--outlist{
+  &--outlist {
     width: 406px;
     height: 65px;
     margin-left: -203px;
@@ -228,7 +227,46 @@
 }
 
 @media (min-width: $screen-lg-min) {
+  .new-books {
+    margin-bottom: 47px;
+  }
+
+  .new-books__title {
+    @include big-letter("К", -84px, 993px);
+  }
+
+  .new-books__items {
+    justify-content: space-between;
+  }
+
+  .new-books__item {
+    padding-right: 0;
+  }
+
   .new-books__item--toggle {
     display: none;
+  }
+
+  .new-books__toggle--outlist {
+    display: block;
+    width: 65px;
+    height: 406px;
+    margin-top: -236px;
+
+    position: absolute;
+    top: 50%;
+    right: -66px;
+    left: auto;
+    bottom: auto;
+
+    &::before {
+      height: 406px;
+
+      transform: rotate(0deg);
+      background-size: auto;
+
+      top: 0px;
+      left: -28px;
+    }
   }
 }

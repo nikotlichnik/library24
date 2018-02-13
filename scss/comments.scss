@@ -11,12 +11,15 @@
   text-transform: uppercase;
 
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 27px;
   padding: 0;
 
   position: relative;
 
-  @include big-letter("О", -102px, -146px);
+  @include big-letter("О", -129px, -27px);
+  &::after{
+    font-size: 277px;
+  }
 }
 
 .comments__items {
@@ -24,10 +27,18 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   margin: 0;
   padding: 0;
+}
+
+.comments__item{
+  margin-bottom: 30px;
+}
+
+.comments__item:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: $screen-md-min) {
@@ -36,5 +47,22 @@
     &::after{
       font-size: 277px;
     }
+
+    margin-bottom: 38px;
+  }
+
+  .comments__items {
+    justify-content: space-between;
+  }
+
+  .comments__item{
+    margin-bottom: 0;
   }
 }
+
+@media (min-width: $screen-lg-min) {
+  .comments__title {
+    @include big-letter("О", -102px, -146px);
+  }
+}
+

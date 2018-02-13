@@ -7,7 +7,6 @@
   background-color: $site-background;
   background-repeat: no-repeat;
   background-position: 50% 22px;
-  background-size: 976px 2370px;
 
   margin: 0;
   padding: 0;
@@ -15,12 +14,10 @@
   padding-bottom: 94px;
 }
 
-@media (min-width: $screen-md-min) {
-
-}
 
 @media (min-width: $screen-lg-min) {
   .page-body {
+    background-size: 976px 2370px;
     background-image: repeating-linear-gradient(to right,
       $site-background-lines 0px,
       $site-background-lines 1px,

@@ -17,7 +17,10 @@
 
   position: relative;
 
-  @include big-letter("Н", -16px, -122px);
+  @include big-letter("Н", -176px, -88px);
+  &::after {
+    font-size: 277px;
+  }
 }
 
 .news__wrapper {
@@ -180,14 +183,20 @@
   .news {
     margin-bottom: 83px;
   }
+  .news__title {
+    @include big-letter("Н", -16px, -122px);
+  }
   .news__items {
     width: 905px;
   }
+
   .news__toggles {
     align-self: flex-start;
 
     width: 165px;
+    margin: 0;
     margin-top: 131px;
+    padding: 0;
   }
 
   .news__toggle {
@@ -200,6 +209,8 @@
 
     &--next {
       right: -70px;
+
+      margin-bottom: 0;
     }
   }
 }

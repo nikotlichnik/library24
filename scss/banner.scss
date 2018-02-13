@@ -89,15 +89,17 @@
 
     align-self: stretch;
   }
-
 }
 
 @media (min-width: $screen-lg-min) {
   .banner {
-    padding: 0 66px;
     width: 1168px;
+    padding: 0 66px;
+    justify-content: flex-start;
   }
+
   .banner__content {
+    width: 500px;
     padding-left: 38px;
   }
 }
