@@ -1,18 +1,10 @@
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('.news__items').owlCarousel({
     loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:3
-      },
-      1000:{
-        items:5
-      }
-    }
+    nav: true,
+    navText: [$('.news__toggle--next'), $('.news__toggle--previous')],
+    controlsClass: 'news__toggles',
+    navClass: ['news__toggle--next','news__toggle--previous']
   })
+
 });

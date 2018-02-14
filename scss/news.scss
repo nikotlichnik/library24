@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.owl-stage{
+  display: flex;
+}
+
 .news__toggles {
   align-self: center;
 
@@ -68,6 +72,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  overflow: hidden;
 
   width: 738px;
   margin: 0;

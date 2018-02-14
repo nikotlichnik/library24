@@ -85,6 +85,12 @@ img {
   .col-lg-6 {
     width: 555px; } }
 
+@media (max-width: 992px) {
+  .col-xs-12 {
+    width: 290px;
+    padding: 0 15px;
+    margin: 0 auto; } }
+
 .page-body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
@@ -496,6 +502,11 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
+.owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .news__toggles {
   -ms-flex-item-align: center;
       align-self: center;
@@ -538,6 +549,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
   width: 738px;
   margin: 0;
   margin-bottom: 26px;
