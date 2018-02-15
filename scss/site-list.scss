@@ -30,3 +30,15 @@
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .site-list{
+    flex-direction: column;
+  }
+
+  .site-list__link {
+    width: 260px;
+    padding: 10px 0;
+
+    border-bottom: 1px solid $site-background-lines;
+  }
+}

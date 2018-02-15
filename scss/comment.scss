@@ -180,3 +180,41 @@
     background: none;
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .comment {
+    flex-direction: column;
+
+    background-image: none;
+  }
+
+  .comment__information {
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    padding-left: 27px;
+
+    background-color: $white;
+  }
+
+  .comment__author-information {
+    padding-top: 7px;
+  }
+
+  .comment__author-name{
+    width: 185px;
+  }
+
+  .comment__text {
+    width: 290px;
+    padding: 0;
+  }
+
+  .comment__book {
+    width: auto;
+
+    background-image: linear-gradient(to top,
+      rgba(161, 196, 253, 1) 0%,
+      rgba(194, 233, 251, 1) 100%);
+  }
+}

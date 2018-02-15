@@ -38,3 +38,24 @@
   fill: $glasses-grey;
 }
 
+@media (max-width: $screen-sm-min) {
+  .user-list{
+    width: 260px;
+    padding: 0 15px;
+    flex-direction: column;
+
+    background-color: $white;
+    box-shadow: -6px -6px 15px 0 $shadow;
+  }
+
+  .user-list__item--blind {
+    display: none;
+  }
+
+  .user-list__link {
+    width: 260px;
+    padding: 10px 0;
+
+    border-bottom: 1px solid $site-background-lines;
+  }
+}

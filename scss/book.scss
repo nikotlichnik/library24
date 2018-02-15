@@ -157,5 +157,10 @@
   .book__page-wrapper {
     padding-left: 20px;
   }
+}
 
+@media (max-width: $screen-sm-min) {
+  .book {
+    display: none;
+  }
 }

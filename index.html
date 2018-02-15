@@ -13,13 +13,18 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 <header class="page-header">
-  <nav class="main-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <nav class="main-nav main-nav--closed col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="main-nav__user-list-wrapper">
-      <a class="main-nav__logo" href="#">
-        <svg class="main-nav__logo-image" width="184px" height="60px">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </a>
+      <div class="main-nav__logo-wrapper">
+        <a class="main-nav__logo" href="#">
+          <svg class="main-nav__logo-image" width="184px" height="60px">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="user-list">
         <li class="user-list__item">
           <a class="user-list__link" href="#">Библиотекарю</a>
@@ -27,7 +32,7 @@
         <li class="user-list__item">
           <a class="user-list__link" href="#">Вход</a>
         </li>
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--blind">
           <a class="user-list__link user-list__link--blind" href="#">
             <svg class="user-list__icon user-list__icon--glasses" width="41" height="17">
               <use xlink:href="#glasses"></use>
@@ -93,7 +98,7 @@
         </button>
       </div>
       <div class="news__items">
-        <div class="news__item col-lg-3 col-md-3 col-sm-3">
+        <div class="news__item col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <p class="news__date">
             <span class="news__date-day">14</span><br>
             <span class="news__date-month">июля</span>
@@ -103,7 +108,7 @@
           <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna. aliqua.</p>
         </div>
-        <div class="news__item col-lg-3 col-md-3 col-sm-3">
+        <div class="news__item col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <p class="news__date">
             <span class="news__date-day">12</span><br>
             <span class="news__date-month">июля</span>
@@ -113,7 +118,7 @@
           <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna. aliqua.</p>
         </div>
-        <div class="news__item col-lg-3 col-md-3 col-sm-3">
+        <div class="news__item col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <p class="news__date">
             <span class="news__date-day">9</span><br>
             <span class="news__date-month">июля</span>
@@ -129,7 +134,7 @@
   <section class="new-books col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h2 class="new-books__title">Новые издания</h2>
     <ul class="new-books__items">
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -137,7 +142,7 @@
           <img class="new-books__item-image" src="img/b1.png" alt="Книга Гибкий ум">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -145,7 +150,7 @@
           <img class="new-books__item-image" src="img/default-cover.png" alt="Нет обложки для данной книги">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -153,7 +158,7 @@
           <img class="new-books__item-image" src="img/b2.png" alt="Книга Вот как мы живём">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -161,7 +166,7 @@
           <img class="new-books__item-image" src="img/b3.png" alt="Книга Без ума от акул">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -169,7 +174,7 @@
           <img class="new-books__item-image" src="img/default-cover.png" alt="Нет обложки для данной книги">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -177,7 +182,7 @@
           <img class="new-books__item-image" src="img/b4.png" alt="Книга Переполох в Египте">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -185,7 +190,7 @@
           <img class="new-books__item-image" src="img/b5.png" alt="Книга Читательский дневник">
         </div>
       </li>
-      <li class="new-books__item col-lg-3 col-md-3 col-sm-6">
+      <li class="new-books__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h3 class="new-books__item-name">Lorem Ipsum</h3>
         <p class="new-books__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.</p>
@@ -204,7 +209,7 @@
   <section class="comments col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h2 class="comments__title">Отзывы</h2>
     <ul class="comments__items">
-      <li class="comments__item comment col-lg-6 col-md-6">
+      <li class="comments__item comment col-lg-6 col-md-6 col-xs-12">
         <blockquote class="comment__information">
           <div class="comment__author-wrapper">
             <img class="comment__author-image" src="img/man1.jpg" alt="Портрет Ивановой Ольги Ивановны">
@@ -224,7 +229,7 @@
           </div>
         </div>
       </li>
-      <li class="comments__item comment col-lg-6 col-md-6">
+      <li class="comments__item comment col-lg-6 col-md-6 col-xs-12">
         <blockquote class="comment__information">
           <div class="comment__author-wrapper">
             <img class="comment__author-image" src="img/man2.jpg" alt="Портрет Иванова Ивана Ивановича">
@@ -258,6 +263,6 @@
 </footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<!--<script src="js/script.js"></script>-->
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -103,3 +103,29 @@
     padding-left: 38px;
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .banner{
+    background: linear-gradient(to right,
+      rgba(161, 196, 253, 1) 0%,
+      rgba(194, 233, 251, 1) 100%);
+
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+
+  .banner__content{
+    width: 290px;
+    padding-top: 40px;
+
+    text-align: center;
+  }
+
+  .banner__name {
+    font-size: 40px;
+  }
+
+  .banner__description{
+    width: 290px;
+  }
+}

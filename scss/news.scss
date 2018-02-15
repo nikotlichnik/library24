@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.owl-stage{
+.owl-stage {
   display: flex;
 }
 
@@ -218,5 +218,31 @@
 
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .news {
+    margin-bottom: 10px;
+  }
+
+  .news__toggles {
+    display: none;
+  }
+
+  .news__items {
+    width: 290px;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .news__item {
+    padding: 0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .news__image {
+    width: 100%;
   }
 }

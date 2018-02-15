@@ -66,3 +66,12 @@
   }
 }
 
+@media (max-width: $screen-md-min){
+  .comments{
+    margin-bottom: 90px;
+  }
+
+  .comments__item{
+    padding: 0;
+  }
+}

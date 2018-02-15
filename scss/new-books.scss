@@ -270,3 +270,30 @@
     }
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .new-books{
+    margin-bottom: 30px;
+  }
+
+  .new-books__title::after {
+    left: 99px;
+  }
+
+  .new-books__item{
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .new-books__item:nth-last-child(2){
+    margin-bottom: 0;
+  }
+
+  .new-books__item-description{
+    width: 290px;
+  }
+
+  .new-books__toggle--outlist{
+    display: none;
+  }
+}
