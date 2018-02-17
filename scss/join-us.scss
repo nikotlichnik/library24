@@ -39,18 +39,22 @@
   padding: 24px 41px;
 }
 
-@media (max-width: $screen-md-min) {
+@media (max-width: $screen-sm-min) {
   .join-us{
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 
   .join-us__message{
     text-align: center;
+    font-size: 27px;
     line-height: 34px;
   }
 
   .join-us__button{
     text-align: center;
     line-height: 27px;
+    font-size: 17px;
+
+    padding: 8px 15px;
   }
 }

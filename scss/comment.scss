@@ -192,7 +192,8 @@
     width: auto;
     padding-top: 25px;
     padding-bottom: 23px;
-    padding-left: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     background-color: $white;
   }
@@ -202,11 +203,11 @@
   }
 
   .comment__author-name{
-    width: 185px;
+    width: 158px;
   }
 
   .comment__text {
-    width: 290px;
+    width: 260px;
     padding: 0;
   }
 

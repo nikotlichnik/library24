@@ -1135,7 +1135,7 @@ img {
 
 @media (max-width: 992px) {
   .comments {
-    margin-bottom: 90px; }
+    margin-bottom: 45px; }
   .comments__item {
     padding: 0; } }
 
@@ -1301,14 +1301,15 @@ img {
     width: auto;
     padding-top: 25px;
     padding-bottom: 23px;
-    padding-left: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #ffffff; }
   .comment__author-information {
     padding-top: 7px; }
   .comment__author-name {
-    width: 185px; }
+    width: 158px; }
   .comment__text {
-    width: 290px;
+    width: 260px;
     padding: 0; }
   .comment__book {
     width: auto;
@@ -1352,15 +1353,18 @@ img {
   display: inline-block;
   padding: 24px 41px; }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .join-us {
-    margin-bottom: 90px; }
+    margin-bottom: 60px; }
   .join-us__message {
     text-align: center;
+    font-size: 27px;
     line-height: 34px; }
   .join-us__button {
     text-align: center;
-    line-height: 27px; } }
+    line-height: 27px;
+    font-size: 17px;
+    padding: 8px 15px; } }
 
 .page-footer {
   display: -webkit-box;
