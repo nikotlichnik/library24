@@ -4,7 +4,8 @@
 //     nav: true,
 //     navText: [$('.news__toggle--next'), $('.news__toggle--previous')],
 //     controlsClass: 'news__toggles',
-//     navClass: ['news__toggle--next','news__toggle--previous']
+//     mouseDrag: false,
+//     margin:20
 //   })
 //
 // });

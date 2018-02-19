@@ -29,9 +29,16 @@
   align-items: center;
 }
 
-.owl-stage {
-  display: flex;
-}
+//
+//.owl-stage {
+//  display: flex;
+//}
+//
+//.owl-nav.disabled {
+//  position: absolute;
+//  left: -100px;
+//  top: 50px;
+//}
 
 .news__toggles {
   align-self: center;
@@ -70,15 +77,17 @@
   list-style: none;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
   justify-content: space-between;
 
-  overflow: hidden;
+  //overflow: hidden;
 
   width: 738px;
   margin: 0;
   margin-bottom: 26px;
   padding: 0 15px;
+
+  position: relative;
 }
 
 .news__item {

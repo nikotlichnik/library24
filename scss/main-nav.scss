@@ -117,15 +117,16 @@
 
   .main-nav__toggle {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-right: 19px;
 
     border: none;
     background-color: transparent;
     background-image: url("../img/menu-icon.svg");
-    background-size: 20px 20px;
+    background-size: 25px 25px;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 
   .main-nav__location{
